@@ -49,3 +49,7 @@ FOREIGN KEY ("airline_id")
   [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
   [1m[36mReview Create (0.3ms)[0m  [1m[32mINSERT INTO "reviews" ("title", "description", "score", "airline_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "Terrible"], ["description", "hot, smelly, lots of kids"], ["score", 2], ["airline_id", 1], ["created_at", "2020-07-14 21:47:46.221977"], ["updated_at", "2020-07-14 21:47:46.221977"]]
   [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mAirline Load (6.2ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines" WHERE "airlines"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mAirline Load (0.2ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines" ORDER BY "airlines"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."airline_id" = $1 LIMIT $2[0m  [["airline_id", 1], ["LIMIT", 11]]
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT AVG("reviews"."score") FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 1]]
