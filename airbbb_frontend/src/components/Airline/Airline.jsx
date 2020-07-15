@@ -56,9 +56,11 @@ const Airline = props => {
         const airline_id = airline.data.id;
         axios.post('http://localhost:3000/api/v1/reviews', {review, airline_id})
         .then(res => {
-            debugger
+            const included = [...airline.included, res.data];
+            setAirline({...airline, included});
+            setReview({title: '', description: '', score: 0})
         })
-        .catch(res => {})
+        .catch(res => console.log(res))
     }
     
     return (

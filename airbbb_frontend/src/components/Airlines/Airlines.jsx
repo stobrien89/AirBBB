@@ -32,7 +32,7 @@ const Airlines = () => {
     const [airlines, setAirlines] = useState([]);
 
     useEffect(() => {
-        axios.get('http://localhost:3000/api/v1/airlines.json')
+        axios.get('http://localhost:3000/api/v1/airlines')
         .then(res => setAirlines(res.data.data))
         .catch(res => console.log(res))
     }, [airlines.length])
