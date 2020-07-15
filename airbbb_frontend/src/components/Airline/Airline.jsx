@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import styled from 'styled-components';
 import axios from 'axios';
 import Header from './Header';
+import ReviewForm from './ReviewForm';
 
 const Wrapper = styled.div`
     display: grid;
@@ -44,19 +45,23 @@ const Airline = props => {
     
     return (
         <Wrapper>
-            <Column>
-                <Main>
-                    {rendered && <Header 
-                        attributes={airline.data.attributes}
-                        reviews={airline.included}
-                        />
-                    }
-                    <div className="reviews"></div>
-                </Main>
-            </Column>
-            <Column>
-                <div className="review-form">Review form</div>
-            </Column>
+            {
+            rendered && 
+            <> 
+                <Column>
+                    <Main>
+                        <Header 
+                            attributes={airline.data.attributes}
+                            reviews={airline.included}
+                            />
+                        <div className="reviews"></div>
+                    </Main>
+                </Column>
+                <Column>
+                    <ReviewForm/>
+                </Column>
+            </>
+         }
         </Wrapper>
         )
 }
