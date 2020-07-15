@@ -51,7 +51,14 @@ const Airline = props => {
     }
 
     const handleSubmit = (event) => {
+        event.preventDefault();
 
+        const airline_id = airline.data.id;
+        axios.post('http://localhost:3000/api/v1/reviews', {review, airline_id})
+        .then(res => {
+            debugger
+        })
+        .catch(res => {})
     }
     
     return (
