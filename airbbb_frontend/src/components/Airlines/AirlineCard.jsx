@@ -35,7 +35,7 @@ const LinkContainer = styled.div`
     }
 `
 
-const AirlineCard = (props) => {
+const AirlineCard = props => {
     return (
         <Card>
             <AirlineLogo>

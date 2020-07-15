@@ -1,8 +1,31 @@
 import React, { useState, useEffect } from 'react';
+import styled from 'styled-components';
 import axios from 'axios';
 import Header from './Header';
 
-const Airline = (props) => {
+const Wrapper = styled.div`
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-left: auto;
+    margin-right: auto;
+`
+
+const Column = styled.div`
+    overflow: scroll;
+    height: 100vh;
+    background: yellow;
+
+    &last-child {
+        background: black;
+    }
+`
+
+const Main = styled.div`
+    padding-left: 50px;
+`
+
+
+const Airline = props => {
     const [airline, setAirline] = useState({});
     const [review, setReview] = useState({});
     const [rendered, setRendered] = useState(false)
@@ -20,19 +43,21 @@ const Airline = (props) => {
     }, [])
     
     return (
-        <div className="wrapper">
-            <div className="column">
-                {rendered && <Header 
-                    attributes={airline.data.attributes}
-                    reviews={airline.included}
-                    />
-                }
-                <div className="reviews"></div>
-            </div>
-            <div className="column">
+        <Wrapper>
+            <Column>
+                <Main>
+                    {rendered && <Header 
+                        attributes={airline.data.attributes}
+                        reviews={airline.included}
+                        />
+                    }
+                    <div className="reviews"></div>
+                </Main>
+            </Column>
+            <Column>
                 <div className="review-form">Review form</div>
-            </div>
-        </div>
+            </Column>
+        </Wrapper>
         )
 }
 
