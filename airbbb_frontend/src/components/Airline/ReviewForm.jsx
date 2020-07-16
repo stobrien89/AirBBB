@@ -41,11 +41,60 @@ const RatingBox = styled.div`
     }
 `
 const RatingTitle = styled.div`
-    
+    font-size: 1.5rem;
+    padding-bottom: 20px;
+    font-weight: bold;
 `
 
 const Field = styled.div`
-    
+    border-radius: 4px;
+
+    input {
+        width: 95%;
+        margin: 12px 0;
+        padding: 12px;
+        min-height: 50px;
+        border-radius: 4px;
+        border: 1px solid black;
+    }
+
+    textarea {
+        min-height: 80px;
+        width: 100%;
+        border-radius: 5px;
+        border: 1px solid black;
+        margin: 12px 0;
+        padding: 12px;
+    }
+`
+
+const Wrapper = styled.div`
+    height: 100vh;
+    background: #333;
+    padding: 20px;
+    padding-top: 100px;
+`
+
+const SubmitButton = styled.button`
+    width: 100%;
+    color: white;
+    background: #333
+    padding: 12px;
+    font-size: 1rem;
+    cursor: pointer;
+    border: 1px solid #333;
+    transition: ease-in-out 0.1s;
+    &:hover {
+        background: #fff;
+        color: black;
+        border: 1px solid #fff;
+    }
+`
+
+const Headline = styled.div`
+    padding: 20px;
+    font-size: 1.5rem;
+    font-weight: bold;
 `
 
 
@@ -61,25 +110,26 @@ const ReviewForm = props => {
     })
     
     return (
-        <div className="wrapper">
+        <Wrapper>
             <form onSubmit={props.handleSubmit}>
-                <p>Have you flown with {props.attributes.name}? Please share your experience!</p>
-                <div className="field">
+                <Headline>Have you flown with {props.attributes.name}? Please share your experience!</Headline>
+                <Field>
                     <input type="text" value={props.review.title} name="title" placeholder="Review Title" onChange={props.handleChange}/>
-                </div>
-                <div className="field">
+                </Field>
+                <Field>
                     <input type="text" value={props.review.description} name="description" placeholder="Description" onChange={props.handleChange}/>
-                </div>
-                <div className="field">
+                </Field>
+                <Field>
+                    <RatingTitle>Your Rating</RatingTitle>
                     <RatingContainer>
                         <RatingBox>
                             {ratings}
                         </RatingBox>
                     </RatingContainer>
-                </div>
-                <button type="submit">Submit Review</button>
+                </Field>
+                <SubmitButton type="submit">Submit Review</SubmitButton>
             </form>
-        </div>
+        </Wrapper>
     )
 }
 
