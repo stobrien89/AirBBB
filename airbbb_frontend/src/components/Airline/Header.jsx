@@ -34,7 +34,7 @@ const Header = props => {
     
     return (
         <Wrapper>
-            <h1><img src={image_url} alt={name}/>Airline name</h1>
+            <h1><img src={image_url} alt={name}/>{name}</h1>
             <div className="container">
                 <TotalReviews>{total} User Reviews</TotalReviews>
                 <div className="starrating"></div>

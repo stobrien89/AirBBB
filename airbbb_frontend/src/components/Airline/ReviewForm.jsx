@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { gray, selected, hover } from './stars'
 
 const RatingContainer = styled.div`
     font-size: 1rem;        
@@ -9,9 +10,41 @@ const RatingContainer = styled.div`
     background: white;
 `
 const RatingBox = styled.div`
+    display: flex;
+    position: relative;
+    background: white;
+    justify-content: center;
+    flex-direction: row-reverse;
+    
+    input {
+        display: none;
+    }
 
+    label {
+        cursor: pointer;
+        height: 40px;
+        width: 40px;
+        background-image: url("data:image/svg+xml;charset=UTF-8,${gray}");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 70%;
+    }
+
+    input:checked ~ label,
+    input:checked ~ label ~ label {
+        background-image: url("data:image/svg+xml;charset=UTF-8,${selected}");
+    }
+
+    input:not(:checked) ~ label:hover,
+    input:not(:checked) ~ label:hover ~ label {
+        background-image: url("data:image/svg+xml;charset=UTF-8,${hover}");
+    }
 `
 const RatingTitle = styled.div`
+    
+`
+
+const Field = styled.div`
     
 `
 
@@ -21,8 +54,8 @@ const ReviewForm = props => {
     const ratings = [5, 4, 3, 2, 1].map((score, i) => {
         return (
             <>
-                <input type="radio" value={score} name="rating" onChange={console.log('selected:', score)} id={`rating:${score}`}/>
-                <label></label>
+                <input type="radio" value={score} checked={props.review.score == score} name="rating" onChange={console.log('selected:', score)} id={`rating:${score}`}/>
+                <label onClick={props.setRating.bind(this, score)}></label>
             </>
         )
     })
@@ -38,10 +71,11 @@ const ReviewForm = props => {
                     <input type="text" value={props.review.description} name="description" placeholder="Description" onChange={props.handleChange}/>
                 </div>
                 <div className="field">
-                    <div className="ratingcontainer">
-                        <p className="titletext"></p>
-                        {ratings}
-                    </div>
+                    <RatingContainer>
+                        <RatingBox>
+                            {ratings}
+                        </RatingBox>
+                    </RatingContainer>
                 </div>
                 <button type="submit">Submit Review</button>
             </form>

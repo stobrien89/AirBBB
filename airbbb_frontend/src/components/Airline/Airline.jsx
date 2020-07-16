@@ -62,6 +62,12 @@ const Airline = props => {
         })
         .catch(res => console.log(res))
     }
+
+    const setRating = (score, event) => {
+        event.preventDefault();
+
+        setReview({...review, score})
+    }
     
     return (
         <Wrapper>
@@ -83,6 +89,7 @@ const Airline = props => {
                         handleSubmit={handleSubmit}
                         attributes={airline.data.attributes}
                         review={review}
+                        setRating={setRating}
                     />
                 </Column>
             </>
