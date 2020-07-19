@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import Authenticate from "../../utils/Auth/Authenticate";
+import Authenticate from "../../utils/auth/authenticate";
 
 const Login = (props) => {
   const [user, setUser] = useState({ email: "", password: "" });
