@@ -7548,3 +7548,1122 @@ Processing by Api::V1::AuthController#create as */*
 Completed 204 No Content in 322ms (Views: 0.3ms | ActiveRecord: 14.5ms | Allocations: 974)
 
 
+Started GET "/api/v1/airlines" for ::1 at 2020-07-19 18:08:51 -0700
+Processing by Api::V1::AirlinesController#index as HTML
+  [1m[36mAirline Load (0.6ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 1]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 1]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 2]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 2]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 3]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[36mReview Load (0.5ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 3]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 4]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[36mReview Load (7.6ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 4]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 5]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 5]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 6]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 6]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+Completed 200 OK in 55ms (Views: 0.1ms | ActiveRecord: 12.2ms | Allocations: 22076)
+
+
+Started GET "/api/v1/airlines" for ::1 at 2020-07-19 18:08:52 -0700
+Processing by Api::V1::AirlinesController#index as HTML
+  [1m[36mAirline Load (6.2ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 1]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[36mReview Load (0.9ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 1]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 2]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 2]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 3]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[36mReview Load (6.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 3]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 4]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 4]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 5]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 5]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[35m (4.7ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 6]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 6]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+Completed 200 OK in 54ms (Views: 0.1ms | ActiveRecord: 22.9ms | Allocations: 11814)
+
+
+Started GET "/api/v1/airlines" for ::1 at 2020-07-19 18:09:03 -0700
+Processing by Api::V1::AirlinesController#index as HTML
+  [1m[36mAirline Load (0.5ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 1]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[36mReview Load (0.7ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 1]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 2]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[36mReview Load (6.8ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 2]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 3]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 3]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 4]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 4]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 5]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 5]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 6]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[36mReview Load (3.9ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 6]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+Completed 200 OK in 30ms (Views: 0.1ms | ActiveRecord: 13.7ms | Allocations: 11811)
+
+
+Started GET "/api/v1/airlines" for ::1 at 2020-07-19 18:09:03 -0700
+Processing by Api::V1::AirlinesController#index as HTML
+  [1m[36mAirline Load (0.4ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[35m (33.2ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 1]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 1]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 2]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[36mReview Load (4.0ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 2]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 3]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 3]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 4]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[36mReview Load (1.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 4]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 5]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 5]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 6]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[36mReview Load (4.5ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 6]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+Completed 200 OK in 63ms (Views: 0.1ms | ActiveRecord: 47.0ms | Allocations: 11811)
+
+
+Started GET "/api/v1/airlines" for ::1 at 2020-07-19 18:09:17 -0700
+Processing by Api::V1::AirlinesController#index as HTML
+  [1m[36mAirline Load (1.8ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[35m (2.5ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 1]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[36mReview Load (5.9ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 1]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 2]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 2]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[35m (7.3ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 3]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 3]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 4]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 4]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[35m (1.9ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 5]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[36mReview Load (0.5ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 5]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[35m (7.3ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 6]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 6]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+Completed 200 OK in 48ms (Views: 0.1ms | ActiveRecord: 29.2ms | Allocations: 11811)
+
+
+Started GET "/api/v1/airlines" for ::1 at 2020-07-19 18:09:17 -0700
+Processing by Api::V1::AirlinesController#index as HTML
+  [1m[36mAirline Load (1.4ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[35m (3.4ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 1]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 1]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 2]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 2]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 3]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 3]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 4]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 4]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 5]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 5]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 6]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 6]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+Completed 200 OK in 20ms (Views: 0.1ms | ActiveRecord: 6.4ms | Allocations: 11811)
+
+
+Started GET "/api/v1/airlines" for ::1 at 2020-07-19 18:10:18 -0700
+Processing by Api::V1::AirlinesController#index as HTML
+  [1m[36mAirline Load (12.8ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[35m (6.7ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 1]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[36mReview Load (0.9ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 1]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 2]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[36mReview Load (9.7ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 2]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 3]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 3]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 4]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[36mReview Load (7.6ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 4]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 5]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[36mReview Load (0.7ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 5]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[35m (2.2ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 6]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[36mReview Load (7.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 6]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+Completed 200 OK in 79ms (Views: 0.1ms | ActiveRecord: 51.1ms | Allocations: 11814)
+
+
+Started GET "/api/v1/airlines" for ::1 at 2020-07-19 18:10:19 -0700
+Processing by Api::V1::AirlinesController#index as HTML
+  [1m[36mAirline Load (0.3ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 1]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 1]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 2]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[36mReview Load (1.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 2]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 3]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 3]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 4]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 4]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 5]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 5]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 6]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 6]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+Completed 200 OK in 19ms (Views: 0.1ms | ActiveRecord: 4.0ms | Allocations: 11811)
+
+
+Started GET "/api/v1/airlines" for ::1 at 2020-07-19 18:13:17 -0700
+Processing by Api::V1::AirlinesController#index as HTML
+  [1m[36mAirline Load (0.7ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 1]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[36mReview Load (22.0ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 1]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 2]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[36mReview Load (0.6ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 2]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 3]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 3]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[35m (11.7ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 4]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 4]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 5]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[36mReview Load (1.0ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 5]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 6]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 6]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+Completed 200 OK in 55ms (Views: 0.1ms | ActiveRecord: 38.7ms | Allocations: 11811)
+
+
+Started GET "/api/v1/airlines" for ::1 at 2020-07-19 18:13:17 -0700
+Processing by Api::V1::AirlinesController#index as HTML
+  [1m[36mAirline Load (6.7ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 1]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 1]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 2]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[36mReview Load (5.9ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 2]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 3]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 3]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 4]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[36mReview Load (0.7ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 4]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[35m (5.1ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 5]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 5]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 6]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 6]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+Completed 200 OK in 41ms (Views: 0.2ms | ActiveRecord: 22.4ms | Allocations: 11811)
+
+
+Started GET "/api/v1/airlines" for ::1 at 2020-07-19 18:13:32 -0700
+Processing by Api::V1::AirlinesController#index as HTML
+  [1m[36mAirline Load (0.4ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 1]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[36mReview Load (10.0ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 1]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 2]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[36mReview Load (6.7ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 2]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 3]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 3]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 4]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 4]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[35m (13.3ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 5]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 5]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[35m (9.6ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 6]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 6]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+Completed 200 OK in 68ms (Views: 0.1ms | ActiveRecord: 41.8ms | Allocations: 11814)
+
+
+Started GET "/api/v1/airlines" for ::1 at 2020-07-19 18:13:32 -0700
+Processing by Api::V1::AirlinesController#index as HTML
+  [1m[36mAirline Load (0.5ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 1]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[36mReview Load (1.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 1]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 2]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 2]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 3]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 3]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 4]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 4]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 5]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[36mReview Load (5.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 5]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 6]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[36mReview Load (3.6ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 6]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+Completed 200 OK in 30ms (Views: 0.1ms | ActiveRecord: 12.9ms | Allocations: 11811)
+
+
+Started GET "/api/v1/airlines/alaska-airlines" for ::1 at 2020-07-19 18:19:38 -0700
+Processing by Api::V1::AirlinesController#show as HTML
+  Parameters: {"slug"=>"alaska-airlines"}
+  [1m[36mAirline Load (0.5ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines" WHERE "airlines"."slug" = $1 LIMIT $2[0m  [["slug", "alaska-airlines"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:13:in `show'
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 4]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:15:in `show'
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 4]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:15:in `show'
+Completed 200 OK in 8ms (Views: 0.1ms | ActiveRecord: 1.3ms | Allocations: 2636)
+
+
+Started GET "/api/v1/airlines" for ::1 at 2020-07-19 18:19:48 -0700
+Processing by Api::V1::AirlinesController#index as HTML
+  [1m[36mAirline Load (0.3ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 1]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 1]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 2]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 2]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 3]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 3]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 4]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 4]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 5]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 5]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 6]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 6]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+Completed 200 OK in 20ms (Views: 0.1ms | ActiveRecord: 4.0ms | Allocations: 11811)
+
+
+Started GET "/api/v1/airlines" for ::1 at 2020-07-19 18:19:48 -0700
+Processing by Api::V1::AirlinesController#index as HTML
+  [1m[36mAirline Load (2.5ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 1]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 1]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[35m (1.8ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 2]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 2]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 3]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[36mReview Load (2.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 3]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 4]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 4]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 5]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 5]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 6]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 6]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+Completed 200 OK in 27ms (Views: 0.1ms | ActiveRecord: 8.6ms | Allocations: 11811)
+
+
+Started GET "/api/v1/airlines/cathay-pacific" for ::1 at 2020-07-19 18:20:05 -0700
+Processing by Api::V1::AirlinesController#show as HTML
+  Parameters: {"slug"=>"cathay-pacific"}
+  [1m[36mAirline Load (1.2ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines" WHERE "airlines"."slug" = $1 LIMIT $2[0m  [["slug", "cathay-pacific"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:13:in `show'
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 1]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:15:in `show'
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 1]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:15:in `show'
+Completed 200 OK in 7ms (Views: 0.1ms | ActiveRecord: 2.2ms | Allocations: 2911)
+
+
+Started GET "/api/v1/airlines" for ::1 at 2020-07-19 18:20:06 -0700
+Processing by Api::V1::AirlinesController#index as HTML
+  [1m[36mAirline Load (0.3ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 1]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 1]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 2]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[36mReview Load (2.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 2]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 3]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[36mReview Load (0.5ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 3]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 4]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 4]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 5]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 5]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 6]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 6]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+Completed 200 OK in 20ms (Views: 0.1ms | ActiveRecord: 5.4ms | Allocations: 11811)
+
+
+Started GET "/api/v1/airlines" for ::1 at 2020-07-19 18:20:06 -0700
+Processing by Api::V1::AirlinesController#index as HTML
+  [1m[36mAirline Load (0.3ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 1]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 1]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 2]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 2]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 3]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[36mReview Load (1.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 3]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 4]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 4]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 5]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 5]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 6]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 6]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+Completed 200 OK in 18ms (Views: 0.1ms | ActiveRecord: 3.3ms | Allocations: 11811)
+
+
+Started GET "/api/v1/airlines" for ::1 at 2020-07-19 18:20:43 -0700
+Processing by Api::V1::AirlinesController#index as HTML
+  [1m[36mAirline Load (1.6ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[35m (2.7ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 1]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 1]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 2]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[36mReview Load (0.8ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 2]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 3]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[36mReview Load (1.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 3]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 4]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 4]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[35m (13.0ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 5]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[36mReview Load (0.6ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 5]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[35m (5.7ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 6]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 6]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+Completed 200 OK in 44ms (Views: 0.1ms | ActiveRecord: 27.3ms | Allocations: 11811)
+
+
+Started GET "/api/v1/airlines" for ::1 at 2020-07-19 18:20:43 -0700
+Processing by Api::V1::AirlinesController#index as HTML
+  [1m[36mAirline Load (0.3ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[35m (10.8ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 1]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[36mReview Load (0.6ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 1]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 2]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 2]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 3]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 3]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 4]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[36mReview Load (3.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 4]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 5]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 5]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[35m (4.6ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 6]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[36mReview Load (2.5ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 6]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+Completed 200 OK in 53ms (Views: 0.1ms | ActiveRecord: 24.5ms | Allocations: 11814)
+
+
+Started GET "/api/v1/airlines" for ::1 at 2020-07-19 18:24:32 -0700
+Processing by Api::V1::AirlinesController#index as HTML
+  [1m[36mAirline Load (2.5ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 1]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[36mReview Load (4.6ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 1]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[35m (2.9ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 2]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[36mReview Load (3.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 2]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 3]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 3]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 4]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[36mReview Load (11.5ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 4]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 5]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 5]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 6]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[36mReview Load (6.6ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 6]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+Completed 200 OK in 52ms (Views: 0.1ms | ActiveRecord: 33.5ms | Allocations: 11811)
+
+
+Started GET "/api/v1/airlines" for ::1 at 2020-07-19 18:24:32 -0700
+Processing by Api::V1::AirlinesController#index as HTML
+  [1m[36mAirline Load (0.3ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 1]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[36mReview Load (3.7ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 1]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 2]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[36mReview Load (2.5ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 2]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 3]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 3]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 4]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 4]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[35m (4.4ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 5]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[36mReview Load (2.0ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 5]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 6]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 6]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+Completed 200 OK in 33ms (Views: 0.1ms | ActiveRecord: 16.0ms | Allocations: 11811)
+
+
+Started GET "/api/v1/airlines" for ::1 at 2020-07-19 18:25:26 -0700
+Processing by Api::V1::AirlinesController#index as HTML
+  [1m[36mAirline Load (17.8ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[35m (6.5ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 1]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[36mReview Load (7.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 1]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 2]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 2]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[35m (12.9ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 3]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[36mReview Load (1.0ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 3]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 4]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 4]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 5]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[36mReview Load (0.5ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 5]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[35m (10.3ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 6]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[36mReview Load (0.6ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 6]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+Completed 200 OK in 76ms (Views: 0.1ms | ActiveRecord: 59.0ms | Allocations: 11811)
+
+
+Started GET "/api/v1/airlines" for ::1 at 2020-07-19 18:25:26 -0700
+Processing by Api::V1::AirlinesController#index as HTML
+  [1m[36mAirline Load (0.5ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 1]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 1]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 2]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 2]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 3]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[36mReview Load (16.0ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 3]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[35m (3.7ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 4]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[36mReview Load (8.7ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 4]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[35m (15.1ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 5]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[36mReview Load (13.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 5]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[35m (3.7ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 6]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[36mReview Load (2.9ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 6]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+Completed 200 OK in 91ms (Views: 0.1ms | ActiveRecord: 65.1ms | Allocations: 11814)
+
+
+Started GET "/api/v1/airlines" for ::1 at 2020-07-19 18:25:50 -0700
+Processing by Api::V1::AirlinesController#index as HTML
+  [1m[36mAirline Load (0.3ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 1]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[36mReview Load (0.8ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 1]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 2]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 2]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[35m (2.2ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 3]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[36mReview Load (0.9ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 3]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 4]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[36mReview Load (0.5ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 4]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 5]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[36mReview Load (0.6ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 5]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 6]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 6]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+Completed 200 OK in 23ms (Views: 0.1ms | ActiveRecord: 6.9ms | Allocations: 11811)
+
+
+Started GET "/api/v1/airlines" for ::1 at 2020-07-19 18:25:50 -0700
+Processing by Api::V1::AirlinesController#index as HTML
+  [1m[36mAirline Load (18.5ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 1]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 1]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[35m (8.2ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 2]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[36mReview Load (2.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 2]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 3]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[36mReview Load (0.7ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 3]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[35m (4.4ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 4]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 4]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 5]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[36mReview Load (6.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 5]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[35m (12.4ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 6]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 6]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+Completed 200 OK in 75ms (Views: 0.1ms | ActiveRecord: 54.4ms | Allocations: 11811)
+
+
+Started GET "/api/v1/airlines" for ::1 at 2020-07-19 18:27:54 -0700
+Processing by Api::V1::AirlinesController#index as HTML
+  [1m[36mAirline Load (0.4ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 1]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[36mReview Load (2.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 1]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 2]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[36mReview Load (0.9ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 2]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 3]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 3]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 4]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 4]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[35m (10.5ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 5]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[36mReview Load (0.7ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 5]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 6]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 6]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+Completed 200 OK in 32ms (Views: 0.2ms | ActiveRecord: 16.6ms | Allocations: 11811)
+
+
+Started GET "/api/v1/airlines" for ::1 at 2020-07-19 18:27:54 -0700
+Processing by Api::V1::AirlinesController#index as HTML
+  [1m[36mAirline Load (14.6ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 1]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[36mReview Load (1.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 1]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[35m (7.7ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 2]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[36mReview Load (0.7ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 2]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 3]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 3]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 4]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[36mReview Load (7.5ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 4]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[35m (3.2ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 5]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[36mReview Load (0.6ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 5]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[35m (6.8ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 6]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[36mReview Load (0.8ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 6]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+Completed 200 OK in 67ms (Views: 0.1ms | ActiveRecord: 45.2ms | Allocations: 11811)
+
+
+Started GET "/api/v1/airlines" for ::1 at 2020-07-19 18:29:57 -0700
+Processing by Api::V1::AirlinesController#index as HTML
+  [1m[36mAirline Load (0.8ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 1]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[36mReview Load (0.5ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 1]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 2]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 2]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 3]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[36mReview Load (9.9ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 3]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 4]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 4]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 5]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 5]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 6]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 6]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+Completed 200 OK in 30ms (Views: 0.1ms | ActiveRecord: 13.9ms | Allocations: 11812)
+
+
+Started GET "/api/v1/airlines" for ::1 at 2020-07-19 18:29:57 -0700
+Processing by Api::V1::AirlinesController#index as HTML
+  [1m[36mAirline Load (0.3ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[35m (4.3ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 1]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[36mReview Load (2.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 1]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 2]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[36mReview Load (4.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 2]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[35m (10.5ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 3]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 3]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 4]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 4]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[35m (12.6ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 5]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[36mReview Load (0.9ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 5]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 6]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[36mReview Load (1.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 6]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+Completed 200 OK in 55ms (Views: 0.1ms | ActiveRecord: 37.5ms | Allocations: 11811)
+
+
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" LIMIT $1[0m  [["LIMIT", 11]]
+Started GET "/api/v1/auth" for ::1 at 2020-07-19 19:00:21 -0700
+Processing by PagesController#index as HTML
+  Parameters: {"path"=>"api/v1/auth"}
+Completed 204 No Content in 2ms (ActiveRecord: 0.0ms | Allocations: 41)
+
+
+Started GET "/api/v1/auth" for ::1 at 2020-07-19 19:01:44 -0700
+Processing by PagesController#index as HTML
+  Parameters: {"path"=>"api/v1/auth"}
+Completed 204 No Content in 0ms (ActiveRecord: 0.0ms | Allocations: 25)
+
+
+Started GET "/api/v1/auth" for ::1 at 2020-07-19 19:03:53 -0700
+Processing by PagesController#index as HTML
+  Parameters: {"path"=>"api/v1/auth"}
+Completed 204 No Content in 0ms (ActiveRecord: 0.0ms | Allocations: 25)
+
+
+Started GET "/api/v1/auth" for ::1 at 2020-07-19 19:08:00 -0700
+Processing by PagesController#index as HTML
+  Parameters: {"path"=>"api/v1/auth"}
+Completed 204 No Content in 0ms (ActiveRecord: 0.0ms | Allocations: 25)
+
+
+Started GET "/api/v1/airlines" for ::1 at 2020-07-19 19:08:00 -0700
+Processing by Api::V1::AirlinesController#index as HTML
+  [1m[36mAirline Load (1.9ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[35m (7.6ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 1]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[36mReview Load (2.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 1]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 2]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[36mReview Load (1.8ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 2]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 3]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[36mReview Load (0.7ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 3]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 4]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[36mReview Load (5.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 4]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[35m (2.5ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 5]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 5]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 6]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 6]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+Completed 200 OK in 62ms (Views: 0.4ms | ActiveRecord: 25.0ms | Allocations: 11915)
+
+
+Started GET "/api/v1/airlines" for ::1 at 2020-07-19 19:08:00 -0700
+Processing by Api::V1::AirlinesController#index as HTML
+  [1m[36mAirline Load (0.4ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 1]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[36mReview Load (0.7ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 1]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 2]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[36mReview Load (0.6ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 2]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 3]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 3]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 4]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 4]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 5]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 5]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 6]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[36mReview Load (1.6ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 6]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+Completed 200 OK in 34ms (Views: 0.1ms | ActiveRecord: 6.1ms | Allocations: 11812)
+
+
+Started GET "/api/v1/auth" for ::1 at 2020-07-19 19:08:08 -0700
+Processing by PagesController#index as HTML
+  Parameters: {"path"=>"api/v1/auth"}
+Completed 204 No Content in 0ms (ActiveRecord: 0.0ms | Allocations: 25)
+
+
+Started GET "/api/v1/auth" for ::1 at 2020-07-19 19:08:12 -0700
+Processing by PagesController#index as HTML
+  Parameters: {"path"=>"api/v1/auth"}
+Completed 204 No Content in 0ms (ActiveRecord: 0.0ms | Allocations: 25)
+
+
+Started GET "/api/v1/auth" for ::1 at 2020-07-19 19:08:17 -0700
+Processing by PagesController#index as HTML
+  Parameters: {"path"=>"api/v1/auth"}
+Completed 204 No Content in 0ms (ActiveRecord: 0.0ms | Allocations: 25)
+
+
+Started GET "/api/v1/auth" for ::1 at 2020-07-19 19:08:17 -0700
+Processing by PagesController#index as HTML
+  Parameters: {"path"=>"api/v1/auth"}
+Completed 204 No Content in 0ms (ActiveRecord: 0.0ms | Allocations: 25)
+
+
+Started GET "/api/v1/airlines" for ::1 at 2020-07-19 19:08:17 -0700
+Processing by Api::V1::AirlinesController#index as HTML
+  [1m[36mAirline Load (1.9ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 1]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[36mReview Load (0.8ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 1]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 2]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[36mReview Load (1.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 2]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[35m (4.0ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 3]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[36mReview Load (2.0ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 3]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[35m (4.7ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 4]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[36mReview Load (0.5ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 4]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[35m (7.0ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 5]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 5]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 6]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[36mReview Load (3.8ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 6]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+Completed 200 OK in 46ms (Views: 0.1ms | ActiveRecord: 28.3ms | Allocations: 11811)
+
+
+Started GET "/api/v1/airlines" for ::1 at 2020-07-19 19:08:17 -0700
+Processing by Api::V1::AirlinesController#index as HTML
+  [1m[36mAirline Load (12.1ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 1]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 1]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[35m (14.7ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 2]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[36mReview Load (12.6ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 2]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 3]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[36mReview Load (7.9ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 3]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[35m (5.5ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 4]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[36mReview Load (0.6ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 4]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[35m (6.6ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 5]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[36mReview Load (0.6ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 5]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 6]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+  [1m[36mReview Load (0.5ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."airline_id" = $1[0m  [["airline_id", 6]]
+  ↳ app/controllers/api/v1/airlines_controller.rb:9:in `index'
+Completed 200 OK in 81ms (Views: 0.1ms | ActiveRecord: 62.9ms | Allocations: 11820)
+
+
+Started GET "/api/v1/auth" for ::1 at 2020-07-19 19:08:27 -0700
+Processing by PagesController#index as HTML
+  Parameters: {"path"=>"api/v1/auth"}
+Completed 204 No Content in 0ms (ActiveRecord: 0.0ms | Allocations: 25)
+
+
+Started GET "/api/v1/auth" for ::1 at 2020-07-19 19:32:46 -0700
+Processing by PagesController#index as HTML
+  Parameters: {"path"=>"api/v1/auth"}
+Completed 204 No Content in 0ms (ActiveRecord: 0.0ms | Allocations: 25)
+
+
+Started GET "/api/v1/auth" for ::1 at 2020-07-19 19:36:11 -0700
+Processing by PagesController#index as HTML
+  Parameters: {"path"=>"api/v1/auth"}
+Completed 204 No Content in 0ms (ActiveRecord: 0.0ms | Allocations: 25)
+
+
+Started GET "/api/v1/auth" for ::1 at 2020-07-19 19:37:47 -0700
+Processing by PagesController#index as HTML
+  Parameters: {"path"=>"api/v1/auth"}
+Completed 204 No Content in 0ms (ActiveRecord: 0.0ms | Allocations: 25)
+
+
+Started GET "/api/v1/auth" for ::1 at 2020-07-19 19:44:01 -0700
+Processing by PagesController#index as HTML
+  Parameters: {"path"=>"api/v1/auth"}
+Completed 204 No Content in 0ms (ActiveRecord: 0.0ms | Allocations: 25)
+
+
+Started GET "/api/v1/auth" for ::1 at 2020-07-19 19:57:38 -0700
+Processing by PagesController#index as HTML
+  Parameters: {"path"=>"api/v1/auth"}
+Completed 204 No Content in 2ms (ActiveRecord: 0.0ms | Allocations: 25)
+
+
+Started GET "/api/v1/auth" for ::1 at 2020-07-19 20:05:25 -0700
+Processing by PagesController#index as HTML
+  Parameters: {"path"=>"api/v1/auth"}
+Completed 204 No Content in 0ms (ActiveRecord: 0.0ms | Allocations: 25)
+
+
+Started GET "/api/v1/auth" for ::1 at 2020-07-19 20:06:37 -0700
+Processing by PagesController#index as HTML
+  Parameters: {"path"=>"api/v1/auth"}
+Completed 204 No Content in 0ms (ActiveRecord: 0.0ms | Allocations: 25)
+
+
+Started GET "/api/v1/auth" for ::1 at 2020-07-19 20:09:06 -0700
+Processing by PagesController#index as HTML
+  Parameters: {"path"=>"api/v1/auth"}
+Completed 204 No Content in 0ms (ActiveRecord: 0.0ms | Allocations: 25)
+
+
