@@ -10,16 +10,19 @@ class AuthProvider extends Component {
 
   componentDidMount() {
     authenticate()
-      .then((resp) => this.setState({ ...resp }))
+      .then((res) => this.setState({ ...res }))
       .catch((err) => console.log(err));
   }
 
   login = (user, props, event) => {
     event.preventDefault();
 
-    axioshelper();
     axios
-      .post("/api/v1/auth", { user: { ...user } }, { withCredentials: true })
+      .post(
+        "http://localhost:3000/api/v1/auth",
+        { user: { ...user } },
+        { withCredentials: true }
+      )
       .then((res) => {
         this.setState({ isAuth: true });
         props.history.push("/");
@@ -30,14 +33,14 @@ class AuthProvider extends Component {
   signup = (user, props, event) => {
     event.preventDefault();
 
-    axioshelper();
     axios
       .post(
-        "/api/v1/registrations",
+        "http://localhost:3000/api/v1/registrations",
         { user: { ...user } },
         { withCredentials: true }
       )
-      .then((resp) => {
+      .then((res) => {
+        console.log(res);
         this.setState({ isAuth: true });
         props.history.push("/");
       })
@@ -47,9 +50,8 @@ class AuthProvider extends Component {
   logout = (event) => {
     event.preventDefault();
 
-    axioshelper();
     axios
-      .delete("/api/v1/auth/logout")
+      .delete("http://localhost:3000/api/v1/auth/logout")
       .then((res) => {
         this.setState({ isAuth: false });
         window.location.href = "/";

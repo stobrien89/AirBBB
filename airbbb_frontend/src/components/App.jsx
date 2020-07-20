@@ -13,7 +13,7 @@ const App = () => {
       <Switch>
         <Route exact path="/" component={Airlines} />
         <Route exact path="/airlines/:slug" component={Airline} />
-        <UnprotectedRoute path="/login" component={Login} />
+        <UnprotectedRoute exact path="/login" component={Login} />
         <UnprotectedRoute exact path="/register" component={Register} />
       </Switch>
     </AuthProvider>

@@ -13,7 +13,11 @@ const Login = (props) => {
     event.preventDefault();
 
     axios
-      .post("/api/v1/auth", { user: { ...user } }, { withCredentials: true })
+      .post(
+        "http://localhost:3000/api/v1/auth",
+        { user: { ...user } },
+        { withCredentials: true }
+      )
       .then((res) => props.history.push("/"))
       .catch((err) => console.log(err));
   };

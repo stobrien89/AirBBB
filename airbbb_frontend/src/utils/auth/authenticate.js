@@ -3,10 +3,12 @@ import axios from "axios";
 const authenticate = async () => {
   let auth = { isAuth: false, email: "" };
 
-  await axios.get("/api/v1/auth/me", { withCredentials: true }).then((resp) => {
-    auth = { isAuth: resp.data.logged_in, email: resp.data.email };
-    return auth;
-  });
+  await axios
+    .get("http://localhost:3000/api/v1/auth", { withCredentials: true })
+    .then((res) => {
+      auth = { isAuth: res.data.logged_in, email: res.data.email };
+      return auth;
+    });
   return auth;
 };
 
