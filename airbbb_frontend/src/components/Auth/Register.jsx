@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import authenticate from "../../utils/auth/authenticate";
 import styled from "styled-components";
 import { AuthConsumer } from "../../context/AuthContext";
 
@@ -69,26 +68,6 @@ const Field = styled.div`
 
 const Register = (props) => {
   const [user, setUser] = useState({ email: "", password: "" });
-
-  // useEffect(() => {
-  //   if (authenticate()) props.history.push("/");
-  // }, []);
-
-  const handleSubmit = (event) => {
-    event.preventDefault();
-
-    axios
-      .post(
-        "http://localhost:3000/api/v1/registrations",
-        { user: { ...user } },
-        { withCredentials: true }
-      )
-      .then((res) => {
-        props.history.push("/");
-      })
-      .catch((err) => console.log(err));
-  };
-
   const handleChange = (event) => {
     setUser({ ...user, [event.target.name]: event.target.value });
   };

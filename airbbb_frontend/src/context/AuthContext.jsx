@@ -24,6 +24,7 @@ class AuthProvider extends Component {
         { withCredentials: true }
       )
       .then((res) => {
+        console.log(res);
         this.setState({ isAuth: true });
         props.history.push("/");
       })
