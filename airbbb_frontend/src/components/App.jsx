@@ -4,12 +4,14 @@ import Airlines from "./Airlines/Airlines";
 import Airline from "./Airline/Airline";
 import Register from "./Auth/Register";
 import Login from "./Auth/Login";
-import UnprotectedRoute from "./UnprotectedRoute";
+import NavigationBar from "./Nav/Nav";
+import UnprotectedRoute from "../context/UnprotectedRoute";
 import { AuthProvider } from "../context/AuthContext";
 
 const App = () => {
   return (
     <AuthProvider>
+      <NavigationBar />
       <Switch>
         <Route exact path="/" component={Airlines} />
         <Route exact path="/airlines/:slug" component={Airline} />

@@ -1,6 +1,5 @@
 import React, { Component, createContext } from "react";
 import axios from "axios";
-import axioshelper from "../utils/axios/axioshelper";
 import authenticate from "../utils/auth/authenticate";
 
 const AuthContext = createContext();
@@ -16,6 +15,7 @@ class AuthProvider extends Component {
 
   login = (user, props, event) => {
     event.preventDefault();
+    console.log(user);
 
     axios
       .post(
@@ -54,6 +54,7 @@ class AuthProvider extends Component {
     axios
       .delete("http://localhost:3000/api/v1/auth/logout")
       .then((res) => {
+        console.log(res);
         this.setState({ isAuth: false });
         window.location.href = "/";
       })

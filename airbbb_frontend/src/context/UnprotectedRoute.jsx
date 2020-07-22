@@ -1,7 +1,7 @@
 //Redirects user away from route if logged in
 import React from "react";
 import { Route, Redirect } from "react-router-dom";
-import { AuthConsumer } from "../context/AuthContext";
+import { AuthConsumer } from "./AuthContext";
 
 const UnprotectedRoute = ({ component: Component, ...rest }) => (
   <AuthConsumer>

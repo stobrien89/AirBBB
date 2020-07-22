@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { AuthConsumer } from "../../context/AuthContext";
 import styled from "styled-components";
 
@@ -67,8 +67,8 @@ const Field = styled.div`
 
 const Login = (props) => {
   const [user, setUser] = useState({ email: "", password: "" });
-  const handleChange = (e) => {
-    setUser({ ...user, [e.target.name]: e.target.value });
+  const handleChange = (event) => {
+    setUser({ ...user, [event.target.name]: event.target.value });
   };
 
   return (
